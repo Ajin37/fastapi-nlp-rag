@@ -1,5 +1,10 @@
 from fastapi import FastAPI
-from app.api.routes import router as api_router
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+from app.api.routes import router
 
 app = FastAPI()
-app.include_router(api_router)
+app.include_router(router)

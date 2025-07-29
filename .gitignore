@@ -17,3 +17,6 @@ venv/
 
 # Logs
 *.log
+
+# Ignore vector store data
+vector_store_data/
